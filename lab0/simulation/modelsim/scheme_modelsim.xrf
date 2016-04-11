@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, /home/liviu/dev/vlsi/vhdl/lab0/scheme.bdf
+source_file = 1, /home/liviu/dev/vlsi/vhdl/lab1/Waveform.vwf
+source_file = 1, /home/liviu/dev/vlsi/vhdl/lab0/db/scheme.cbx.xml
+design_name = scheme
+instance = comp, \x3~I , x3, scheme, 1
+instance = comp, \x1~I , x1, scheme, 1
+instance = comp, \x4~I , x4, scheme, 1
+instance = comp, \x2~I , x2, scheme, 1
+instance = comp, \inst2~0 , inst2~0, scheme, 1
+instance = comp, \f~I , f, scheme, 1
