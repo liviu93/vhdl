@@ -1,0 +1,56 @@
+--------------------------------------------------
+--
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.std_logic_arith.all;  
+--use ieee.std_logic_unsigned.all; 
+--entity adder8421_1 is
+--	generic (size : integer := 4);
+--	port (
+--				a 		: 	in std_logic_vector(size-1 downto 0);
+--				b 		: 	in std_logic_vector(size-1 downto 0);
+--				cin	: 	in std_logic;
+--				cout	:	out std_logic; 
+--				s		:  out std_logic_vector(size-1 downto 0)
+--			);
+--end entity adder8421_1;
+--
+--
+--architecture rtl  of adder8421_1 is
+--	signal s1			: std_logic_vector(size downto 0); 
+--	signal cout_i		: std_logic; 
+--	signal coutand1	: std_logic;
+--	signal coutand2	: std_logic;
+--	signal coutor		: std_logic;
+--begin
+--process(a, b, cin)
+--begin		
+--	s1 <= conv_std_logic_vector(  
+--                (	conv_integer(a) + 
+--						conv_integer(b) +  
+--						conv_integer(cin)
+--					 ), size+1);  
+--					 
+--	cout_i 	<= (s(3) and s(2)) or (s(3) and s(1)) or s(4);
+--	
+--	s <= conv_std_logic_vector(  
+--                (	conv_integer('0' & cout_i & cout_i & '0') + 
+--						conv_integer(s1(3 downto 0))
+--					 ), size);  
+--					 
+--	cout 		<= cout_i;
+--end process;
+-------------------
+--
+--	
+--end architecture rtl;
+--
+--
+--
+--
+------------------------------
+--
+--
+--
+--
+--
